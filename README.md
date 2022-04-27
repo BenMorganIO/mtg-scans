@@ -1,5 +1,7 @@
 # MtG Scans
 
+https://mtg-scans.onrender.com/
+
 Loads up scans of MtG cards so that we can see what high res symbols are used.
 This is useful for detecting fakes.
 
