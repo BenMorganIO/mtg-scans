@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+.img-zoom-container {
+  position: relative;
+  margin: 3vh 0;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  width: 80vh;
+  height: 80vh;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 0 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.panel img {
+  display: inline-block;
+  height: 80vh;
+}
