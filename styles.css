@@ -46,7 +46,14 @@
   overflow: hidden;
 }
 
-.panel img {
+.panel__image {
   display: inline-block;
-  height: 80vh;
+  max-height: 80vh;
+  max-width: calc(100% - 80vh - 24px);
+}
+
+.panel__loading {
+  background-color: #3498DB;
+  padding: 25%;
+  width:  100%;
 }

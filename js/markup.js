@@ -7,8 +7,10 @@ function markup(setCode, cards) {
       <button class="accordion" data-card-id="${setCode}-${card['Number']}-front" onClick="cardAccordion(this)">Front</button>
       <div class="panel">
         <div class="img-zoom-container">
-          <img id="${setCode}-${card['Number']}-front" src="https://drive.google.com/uc?export=view&id=${card['Front ID']}" loading="lazy"/>
-          <div id="${setCode}-${card['Number']}-front-zoom" class="img-zoom-result"></div>
+          <img id="${setCode}-${card['Number']}-front" class="panel__image" src="https://drive.google.com/uc?export=view&id=${card['Front ID']}" loading="lazy"/>
+          <div id="${setCode}-${card['Number']}-front-zoom" class="img-zoom-result">
+            <img class="panel__loading" src="imgs/loading.svg"/>
+          </div>
         </div>
       </div>
     `
@@ -20,8 +22,10 @@ function markup(setCode, cards) {
         <button class="accordion" data-card-id="${setCode}-${card['Number']}-back" onClick="cardAccordion(this)">Back</button>
         <div class="panel">
           <div class="img-zoom-container">
-            <img id="${setCode}-${card['Number']}-back" src="https://drive.google.com/uc?export=view&id=${card['Back ID']}" loading="lazy"/>
-            <div id="${setCode}-${card['Number']}-back-zoom" class="img-zoom-result"></div>
+            <img id="${setCode}-${card['Number']}-back" class="panel__image" src="https://drive.google.com/uc?export=view&id=${card['Back ID']}" loading="lazy"/>
+            <div id="${setCode}-${card['Number']}-back-zoom" class="img-zoom-result">
+              <img class="panel__loading" src="imgs/loading.svg"/>
+            </div>
           </div>
         </div>
       `
